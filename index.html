@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rahmani Pharmacy</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">RH</div>
+    <div class="title-block">
+      <h1>Rahmani Pharmacy</h1>
+      <p class="subtitle">فروشگاه آنلاین دواها — نسخهٔ اولیه</p>
+    </div>
+    <div class="search">
+      <input id="search" placeholder="جستجو در میان داروها..." />
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <h3>دسته‌ها</h3>
+      <ul id="categories">
+        <li data-cat="همه" class="cat active">همه</li>
+      </ul>
+      <div class="about">
+        <h4>درباره ما</h4>
+        <p>فروشگاه Rahmani Pharmacy ارائه‌دهندهٔ انواع دواها با کیفیت. قیمت‌ها پس از ثبت سفارش اعلام می‌شوند.</p>
+      </div>
+    </aside>
+
+    <section class="products" id="products"></section>
+  </main>
+
+  <!-- Order modal -->
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close">✖</button>
+      <h3 id="modalTitle"></h3>
+      <p class="note">قیمت پس از بررسی اعلام می‌شود.</p>
+      <form id="orderForm">
+        <label>نام و نام خانوادگی<input id="name" required></label>
+        <label>شماره تماس<input id="phone" required></label>
+        <label>آدرس<input id="address"></label>
+        <label>توضیح / پیام<textarea id="note"></textarea></label>
+        <div class="actions">
+          <button type="submit" class="btn primary">ارسال سفارش به واتساپ</button>
+          <button type="button" id="cancel" class="btn">انصراف</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">© Rahmani Pharmacy — نسخهٔ آزمایشی</footer>
+
+  <script>
+    const waNumber = "93784632234"; // provided number without + sign
+  </script>
+  <script src="app.js"></script>
+
+</body>
+</html>
