@@ -1,0 +1,179 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IRANSans", sans-serif;
+}
+
+body {
+  background: #f2f7ff;
+  color: #222;
+}
+
+/* Splash Screen */
+.splash {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #1976d2, #42a5f5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.splash-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+/* Header */
+.header {
+  background: #1976d2;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.app-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  padding: 10px;
+}
+
+.sidebar {
+  width: 30%;
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  height: calc(100vh - 160px);
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  margin-bottom: 10px;
+}
+
+.cat {
+  background: #e3f2fd;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cat.active {
+  background: #1976d2;
+  color: white;
+}
+
+/* Products */
+.products {
+  width: 70%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.product {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px #0001;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.buy {
+  margin-top: 10px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 7px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #e3f2fd;
+  margin-top: 20px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+.nav-btn.active {
+  color: #1976d2;
+}
+
+/* Modal */
+.modal.hidden { display: none; }
+
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #0007;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  width: 90%;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.close {
+  float: left;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
