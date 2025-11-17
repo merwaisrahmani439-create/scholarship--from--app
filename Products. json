@@ -1,0 +1,71 @@
+
+  {
+    "name": "Amoxicillin 500mg",
+    "price": 85,
+    "desc": "آنتی‌بیوتیک برای عفونت‌های باکتریایی",
+    "image": "https://i.imgur.com/Y3ZfHfh.jpeg",
+    "category": "antibiotic"
+  },
+  {
+    "name": "Azithromycin 250mg",
+    "price": 120,
+    "desc": "آنتی‌بیوتیک قوی برای عفونت‌های تنفسی",
+    "image": "https://i.imgur.com/kOUbBfD.jpeg",
+    "category": "antibiotic"
+  },
+  {
+    "name": "Cefixime 400mg",
+    "price": 150,
+    "desc": "آنتی‌بیوتیک نسل سوم بسیار موثر",
+    "image": "https://i.imgur.com/hmyOg4D.jpeg",
+    "category": "antibiotic"
+  },
+  {
+    "name": "Paracetamol 500mg",
+    "price": 30,
+    "desc": "مسکن و تب‌بر عمومی",
+    "image": "https://i.imgur.com/Qe9qUAs.jpeg",
+    "category": "painkiller"
+  },
+  {
+    "name": "Ibuprofen 400mg",
+    "price": 40,
+    "desc": "مسکن درد و ضد التهاب",
+    "image": "https://i.imgur.com/ze5g3Hm.jpeg",
+    "category": "painkiller"
+  },
+  {
+    "name": "Diclofenac 50mg",
+    "price": 25,
+    "desc": "مسکن قوی برای دردهای عضلانی",
+    "image": "https://i.imgur.com/zXnZbmP.jpeg",
+    "category": "painkiller"
+  },
+  {
+    "name": "Vitamin C 500mg",
+    "price": 55,
+    "desc": "تقویت سیستم ایمنی و ضدسرماخوردگی",
+    "image": "https://i.imgur.com/8krzGid.jpeg",
+    "category": "vitamin"
+  },
+  {
+    "name": "Vitamin D3 50,000 IU",
+    "price": 90,
+    "desc": "تقویت استخوان و سیستم ایمنی",
+    "image": "https://i.imgur.com/Wo1e7vv.jpeg",
+    "category": "vitamin"
+  },
+  {
+    "name": "Multivitamin",
+    "price": 120,
+    "desc": "مکمل کامل برای انرژی و سلامت عمومی",
+    "image": "https://i.imgur.com/lm5Vb4n.jpeg",
+    "category": "vitamin"
+  },
+  {
+    "name": "ORS",
+    "price": 10,
+    "desc": "برای کم‌آبی و اسهالات",
+    "image": "https://i.imgur.com/t7wttSb.jpeg",
+    "category": "general"
+  }
