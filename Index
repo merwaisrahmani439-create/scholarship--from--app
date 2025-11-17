@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>رحمانی هِلت - Rahmani Health</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="splash" class="splash">
+    <img src="icon-192.png" alt="لوگو رحمانی" class="splash-logo">
+    <h2>به رحمانی هِلت خوش آمدید 🌿</h2>
+  </div>
+
+  <header class="header app-hidden">
+    <img src="icon-192.png" class="app-logo" alt="لوگو">
+    <div class="title-block">
+      <h1>رحمانی هِلت</h1>
+      <p class="subtitle">فروشگاه آنلاین دارو و محصولات سلامتی</p>
+    </div>
+    <input id="search" placeholder="جستجو در داروها...">
+  </header>
+
+  <main class="container app-hidden">
+    <aside class="sidebar">
+      <h3>دسته‌ها</h3>
+      <ul id="categories"><li data-cat="همه" class="cat active">همه</li></ul>
+      <div style="margin-top:12px"><a href="admin.html" class="btn">پنل مدیر</a></div>
+    </aside>
+
+    <section id="products" class="products" aria-live="polite"></section>
+  </main>
+
+  <nav class="bottom-nav app-hidden" role="navigation" aria-label="ناوبری">
+    <button class="nav-btn active" data-view="home">🏠 خانه</button>
+    <button class="nav-btn" data-view="categories">💊 داروها</button>
+    <button class="nav-btn" data-view="orders">🧾 سفارش‌ها</button>
+    <button class="nav-btn" data-view="contact">📞 تماس</button>
+  </nav>
+
+  <!-- order modal -->
+  <div id="orderModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button id="closeModal" class="close" aria-label="بستن">✖</button>
+      <h3 id="modalTitle"></h3>
+      <p class="note">قیمت: <span id="modalPrice"></span> افغانی</p>
+      <form id="orderForm">
+        <label>نام و نام خانوادگی<input id="name" required></label>
+        <label>شماره تماس<input id="phone" required></label>
+        <label>آدرس<input id="address"></label>
+        <label>توضیح<textarea id="note"></textarea></label>
+        <div class="actions">
+          <button type="submit" class="btn primary">سفارش از واتساپ</button>
+          <button type="button" id="cancel" class="btn">انصراف</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer app-hidden">© Rahmani Health - همه حقوق محفوظ است</footer>
+
+  <script>const WA_NUMBER='93784632234';</script>
+  <script src="app.js"></script>
+  <script>
+    // hide splash then show app
+    setTimeout(function(){
+      const s = document.getElementById('splash');
+      if(s) s.style.display = 'none';
+      document.querySelectorAll('.app-hidden').forEach(function(e){ e.style.display = 'block'; });
+    }, 900);
+  </script>
+</body>
+</html>
